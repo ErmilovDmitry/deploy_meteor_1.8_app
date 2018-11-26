@@ -67,6 +67,7 @@ export PORT=80
 export MONGO_URL='mongodb://localhost/data_base_name_as_local'
 export ROOT_URL='http://url-here.com'
 export MAIL_URL='smtp://user:password@mailhost:port/'
+export BIND_IP=192.168.0.2
 
 forever start /home/meteor/bundle/main.js
 ```
