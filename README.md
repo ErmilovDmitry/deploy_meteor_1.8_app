@@ -61,6 +61,7 @@ cd /path/to/meteor/folder/
 tar xvf archive.tar.gz
 cd bundle/
 ```
+Install dependencies & set variables & RUN
 ```
 (cd programs/server && npm install)
 export PORT=80
