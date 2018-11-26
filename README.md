@@ -61,3 +61,12 @@ Install forever to launch scripts forever :)
 ```
 npm install -g forever
 ```
+### Local machine (MacOS)
+Build bundle
+```
+meteor build ./../build  --architecture=os.linux.x86_64
+```
+Copy to remote (SSH with keys)
+```
+scp ../build/disp2.tar.gz ovz:/home/meteor/
+```
