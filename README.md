@@ -71,3 +71,7 @@ export BIND_IP=192.168.0.2
 
 forever start /home/meteor/bundle/main.js
 ```
+## Automatic deploy using scripts
+To be continued ...
+## Automatic with Meteor-Up (with Docker and seamless deploy)
+To be continued ...
