@@ -47,6 +47,9 @@ sudo apt-get update
 
 sudo apt-get install -y mongodb-org=4.0.6 mongodb-org-server=4.0.6 mongodb-org-shell=4.0.6 mongodb-org-mongos=4.0.6 mongodb-org-tools=4.0.6
 
+#OPTIONAL 3.4.10
+sudo apt-get install -y mongodb-org=3.4.10 mongodb-org-server=3.4.10 mongodb-org-shell=3.4.10 mongodb-org-mongos=3.4.10 mongodb-org-tools=3.4.10
+
 # prevent auto upgrade
 echo "mongodb-org hold" | sudo dpkg --set-selections
 echo "mongodb-org-server hold" | sudo dpkg --set-selections
