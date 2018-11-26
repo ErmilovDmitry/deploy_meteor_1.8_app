@@ -70,3 +70,13 @@ Copy to remote (SSH with keys)
 ```
 scp ../build/disp2.tar.gz ovz:/home/meteor/
 ```
+### Server
+Unpack bundle archive
+```
+cd /home/meteor/
+tar xvf disp2.tar.gz
+cd bundle/
+```
+```
+(cd programs/server && npm install)
+```
