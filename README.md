@@ -2,7 +2,7 @@
 
 ## 1. Manually
 
-Deploy from local Meteor 1.8 to remote server with Debian/Ubuntu OS
+Deploy from local Meteor 1.8 to remote server with (Debian 9)/Ubuntu 16 OS
 ### On remote server
 
 Install nvm
@@ -39,5 +39,18 @@ npm install npm@latest -g
 ```
 Install Mongo 4.0.6
 ```
-sudo apt-get install -y mongodb@4.0.6
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+sudo apt-get update
+
+sudo apt-get install -y mongodb-org=4.0.6 mongodb-org-server=4.0.6 mongodb-org-shell=4.0.6 mongodb-org-mongos=4.0.6 mongodb-org-tools=4.0.6
+
+# prevent auto upgrade
+echo "mongodb-org hold" | sudo dpkg --set-selections
+echo "mongodb-org-server hold" | sudo dpkg --set-selections
+echo "mongodb-org-shell hold" | sudo dpkg --set-selections
+echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+echo "mongodb-org-tools hold" | sudo dpkg --set-selections
 ```
