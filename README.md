@@ -15,7 +15,14 @@ source ~/.zshrc
 Install Node 8.11.4
 ```
 nvm install 8.11.4
+
+# check installed
+nvm ls
+
+# Check available
+nvm ls-remote
 ```
+
 or alternative, without NVM
 ```
 # Using Ubuntu
@@ -29,4 +36,8 @@ apt-get install -y nodejs
 Install npm (if needed)
 ```
 npm install npm@latest -g
+```
+Install Mongo 4.0.6
+```
+sudo apt-get install -y mongodb@4.0.6
 ```
