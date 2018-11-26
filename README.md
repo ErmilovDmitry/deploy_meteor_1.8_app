@@ -79,8 +79,12 @@ cd bundle/
 ```
 ```
 (cd programs/server && npm install)
+export PORT=80
 export MONGO_URL='mongodb://localhost/dispatcher'
+# export MONGO_URL=mongodb://localhost:27017/meteor
 export ROOT_URL='http://url-here.com'
 export MAIL_URL='smtp://user:password@mailhost:port/'
 node main.js
+
+forever start /home/meteor/bundle/main.js
 ```
