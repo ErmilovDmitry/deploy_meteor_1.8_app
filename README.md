@@ -37,7 +37,7 @@ Install npm (if needed)
 ```
 npm install npm@latest -g
 ```
-Install Mongo 4.0.6
+Install Mongo 4.0.6 ????
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 
@@ -56,4 +56,8 @@ echo "mongodb-org-server hold" | sudo dpkg --set-selections
 echo "mongodb-org-shell hold" | sudo dpkg --set-selections
 echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
 echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+```
+Install forever to launch scripts forever :)
+```
+npm install -g forever
 ```
