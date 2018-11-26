@@ -79,4 +79,8 @@ cd bundle/
 ```
 ```
 (cd programs/server && npm install)
+export MONGO_URL='mongodb://localhost/dispatcher'
+export ROOT_URL='http://url-here.com'
+export MAIL_URL='smtp://user:password@mailhost:port/'
+node main.js
 ```
