@@ -60,6 +60,9 @@ Unpack bundle archive
 cd /path/to/meteor/folder/
 tar xvf archive.tar.gz
 cd bundle/
+
+cd programs/server
+npm install --production
 ```
 Install dependencies & set variables & RUN
 ```
